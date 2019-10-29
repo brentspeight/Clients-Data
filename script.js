@@ -1,21 +1,23 @@
 //Dummy data below
 var data = {
-    success: 0,
-    warning: 1,
-    error: 0,
-    startTime: '20:30:00',
-    endTime: '20:35:04',
-    duration: '00:05:03',
-    totalSize: '100.0GB',
-    dataRead: '5.7GB',
-    transferred: '1.4GB',
-    backupSize: '1.4GB',
-    dedupe: '1.0x',
-    compression: '2.1x',
+        name: 'ComputerB',
+        success: 0,
+        warning: 1,
+        error: 0,
+        startTime: '20:30:00',
+        endTime: '20:35:04',
+        duration: '00:05:03',
+        totalSize: '100.0GB',
+        dataRead: '5.7GB',
+        transferred: '1.4GB',
+        backupSize: '1.4GB',
+        dedupe: '1.0x',
+        compression: '2.1x',
+
 };
 
-var container = document.querySelector('.secondName');
-var row = document.createElement('tr');
+var container = $('.secondName');
+var row = $('<tr>');
 if(data.success){
     
     var sTotal = $('<td>' + data.totalSize + '</td>');
@@ -40,16 +42,26 @@ if(data.success){
 }
 
 if(data.warning){
-    var wTotal = $('<td>' + data.totalSize + '</td>');
-    var wEnd = $('<td>' + data.endTime + '</td>');
-    var wDur = $('<td>' + data.duration + '</td>');
-    var wRead = $('<td>' + data.dataRead + '</td>');
-    var wTrans = $('<td>' + data.transfeered + '</td>');
-    var wBack = $('<td>' + data.backupSize + '</td>');
-    var wDedupe = $('<td>' + data.dedupe + '</td>');
-    var wCompress = $('<td>' + data.compression + '</td>');
-    var wStart = $('<td>' + data.startTime + '</td>');
-
+    //alert("works")
+    var computerName = $('<td>' + 'Name:' + ' ' + data.name + '</td>');
+    var successC = $('<td>' + 'Success:' + ' ' + data.success + '</td>');
+    var warn = $('<td>' + 'Warning:' + ' ' + data.warning + '</td>');
+    var error = $('<td>' + 'Error:' + ' ' + data.error + '</td>');
+    var wTotal = $('<td>' + 'Total Size' + ' ' + data.totalSize + '</td>');
+    console.log(wTotal);
+    var wEnd = $('<td>' +'End Time:'+ ' ' + data.endTime + '</td>');
+    var wDur = $('<td>' + 'Duration:' + ' ' + data.duration + '</td>');
+    var wRead = $('<td>' + 'Data Read:' + ' ' + data.dataRead + '</td>');
+    var wTrans = $('<td>' + 'Transferred:' + ' ' +  data.transferred + '</td>');
+    var wBack = $('<td>' + 'Backup Size:' + ' ' + data.backupSize + '</td>');
+    var wDedupe = $('<td>' + 'Dedupe:' + ' ' + data.dedupe + '</td>');
+    var wCompress = $('<td>' + 'Compression:' + ' ' + data.compression + '</td>');
+    var wStart = $('<td>' + 'StartTime:' + ' ' + data.startTime + '</td>');
+    //successC.text('Success:' + '' + data.computerNameB.success)
+    row.append(computerName);
+    row.append(successC);
+    row.append(warn);
+    row.append(error);
     row.append(wTotal);
     row.append(wEnd);
     row.append(wDur);
@@ -59,6 +71,7 @@ if(data.warning){
     row.append(wDedupe);
     row.append(wCompress);
     row.append(wStart);
+
 }
 if(data.error){
     var eTotal = $('<td>' + data.totalSize + '</td>');
@@ -81,7 +94,7 @@ if(data.error){
     row.append(eCompress);
     row.append(eStart);
 }
-container.appendChild(row);
+container.append(row);
 
 // console.log('Display data' +" "+ data);
 
