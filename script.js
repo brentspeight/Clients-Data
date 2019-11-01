@@ -289,10 +289,12 @@ function infoData() {
         }
     }
 
-infoData()
 
 
 }
 
+
+
+infoData()
 
 
