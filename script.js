@@ -289,7 +289,7 @@ function infoData() {
         }
     }
 
-
+infoData()
 
 
 }
