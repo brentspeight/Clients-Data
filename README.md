@@ -2,6 +2,8 @@
 
 #### CLIENTS-DATA URL SCREENSHOT:
 
+<img width="703" alt="Clients_Data" src="https://user-images.githubusercontent.com/34906126/68060790-12732580-fcbf-11e9-8854-a524ad156b7b.png">
+
 
 ## Overview and Description:
 
@@ -36,7 +38,7 @@
 
     Brent Speight: Initialized Repository, Initialized: ZenHub Clients-Data Issues #1-3 and #6-10; Assigned to Issues: #1 Add HTML to Index page, #2 Create dummy data for project, #3 added dummy data to javascript, #6 add Jquery and Javascript to dynamically generate table cells, #7 added Javascript and Jquery, #8 J code, #9 Finished final touches of code, and #10 Make it look Pretty/CSS :)  
 
-    Becca Burke: Project Proposal and  Project Oversight; Assigned To: Issue #11 Css updates
+    Becca Burke: Project Proposal and Project Oversight; Assigned To: Issue #11 Css updates
 
     Isabeela Gomez: CSS styling; Assigned To: Issue #10 Make it look Pretty/CSS :) 
 
@@ -50,9 +52,11 @@
 
     Materialize: (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
   
+    //Scripts to link jQuery and JavaScript:
+    
     jQuery Script: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
   
-    JavaScript: 
+    JavaScript: <script src="script.js"></script>
 
 
 ## Credits:
