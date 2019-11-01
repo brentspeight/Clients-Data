@@ -14,35 +14,40 @@
 
 ## Application Requirements:
 
-    Javascript:
+    Javascript: or JS, is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles  by defintion of developer.mozilla.org at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript.
     
-    jQuery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+    jQuery (https://jquery.com/): a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto: Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 
 
-
-## Deployed to GitHub at:
+## Deployed to GitHub at: https://brentspeight.github.io/Clients-Data/
 
 ## Project Management and Collaborators:
 
-Project Manager: Repository Initialized by Brent Speight (Lead)
+    Project Manager: Repository Initialized by Brent Speight (Lead)
 
-Collaborators: Becca Burke (Project Oversight), Isabella Gomez (CSS), Tywunda Shivers (README.md)
+    Collaborators: Becca Burke (Project Oversight), Isabella Gomez (CSS), Tywunda Shivers (README.md)
 
 ## Team Member Responsibilities and Task Completed:
 
-Brent Speight: Initialized Repository, Initialized: ZenHub Clients-Data Issues #1-3 and #6-10; Assigned to Issues: #1 Add HTML to Index page, #2 Create dummy data for project, #3 added dummy data to javascript, #6 add Jquery and Javascript to dynamically generate table cells, #7 added Javascript and Jquery, #8 J code, #9 Finished final touches of code, and #10 Make it look Pretty/CSS :)  
+    Brent Speight: Initialized Repository, Initialized: ZenHub Clients-Data Issues #1-3 and #6-10; Assigned to Issues: #1 Add HTML to Index page, #2 Create dummy data for project, #3 added dummy data to javascript, #6 add Jquery and Javascript to dynamically generate table cells, #7 added Javascript and Jquery, #8 J code, #9 Finished final touches of code, and #10 Make it look Pretty/CSS :)  
 
-Becca Burke: Project Proposal, Project Oversight, and Assigned To: Issue #11 Css updates
+    Becca Burke: Project Proposal and  Project Oversight; Assigned To: Issue #11 Css updates
 
-Isabeela Gomez: CSS styling 
+    Isabeela Gomez: CSS styling; Assigned To: Issue #10 Make it look Pretty/CSS :) 
 
-Tywunda Shivers: 
+    Tywunda Shivers: README.md; Assigned To: Issue #5 Filling out README.md 
 
 ## Resources:
 
-   Google Fonts (https://fonts.google.com/) a free and open source font catalog that places typography front and center, inviting users to explore, sort, and test fonts for use in more than 135 languages.
+    Google: (google.com)
+   
+    Google Fonts: (https://fonts.google.com/) a free and open source font catalog that places typography front and center, inviting users to explore, sort, and test fonts for use in more than 135 languages.
 
-  Materialize (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
+    Materialize: (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
+  
+    jQuery Script: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+  
+    JavaScript: 
 
 
 ## Credits:
