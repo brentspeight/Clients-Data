@@ -16,6 +16,10 @@
 
     Javascript: or JS, is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles  by defintion of developer.mozilla.org at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript.
     
+#### SAMPLE JavaScript:
+
+<img width="262" alt="sampleCode" src="https://user-images.githubusercontent.com/34906126/68060539-08045c00-fcbe-11e9-9116-86d49e8fdca8.png">
+    
     jQuery (https://jquery.com/): a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto: Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 
 
