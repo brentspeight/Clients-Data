@@ -296,3 +296,8 @@ function infoData() {
 
 
 infoData()
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> master

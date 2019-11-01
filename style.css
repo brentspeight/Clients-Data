@@ -1,4 +1,9 @@
-#table, tr, td {
+#table {
+    width: 98%;
+    margin-left: 10px;
+}
+
+tr, td {
     border: 1px solid whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -6,17 +11,17 @@
 #tBodyOne {
     color: greenyellow;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 #tBodyTwo {
     color: rgb(255, 238, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 #tBodyThree {
     color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 body {
     background-color: rgb(44, 57, 71);
@@ -28,4 +33,3 @@ h3 {
 .width {
   color: rgb(232, 90, 236);
 }
-
