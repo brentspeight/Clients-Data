@@ -1,6 +1,8 @@
 //Dummy data below
-var data = {
-        name: 'ComputerB',
+var data = [
+    //Object 1
+    {
+        name: 'Computer AB',
         success: 0,
         warning: 1,
         error: 0,
@@ -8,114 +10,289 @@ var data = {
         endTime: '20:35:04',
         duration: '00:05:03',
         totalSize: '100.0GB',
-        dataRead: '5.7GB',
+        dataRead: '5.9GB',
         transferred: '1.4GB',
         backupSize: '1.4GB',
         dedupe: '1.0x',
         compression: '2.1x',
+    },
+    //Object 2
+    {
+        name: 'Computer CD',
+        success: 1,
+        warning: 0,
+        error: 0,
+        startTime: '20:40:00',
+        endTime: '20:45:04',
+        duration: '00:10:03',
+        totalSize: '150.0GB',
+        dataRead: '6.3GB',
+        transferred: '2.4GB',
+        backupSize: '2.4GB',
+        dedupe: '2.0x',
+        compression: '8.8x',
+    },
+    //Object 3
+    {
+        name: 'Computer EF',
+        success: 1,
+        warning: 0,
+        error: 0,
+        startTime: '33:30:00',
+        endTime: '23:45:04',
+        duration: '05:10:03',
+        totalSize: '1660.0GB',
+        dataRead: '5.7GB',
+        transferred: '8.4GB',
+        backupSize: '2.4GB',
+        dedupe: '5.0x',
+        compression: '4.7x',
+    },
+    //Object 4
+    {
+        name: 'Computer GH',
+        success: 0,
+        warning: 0,
+        error: 1,
+        startTime: '10:40:00',
+        endTime: '22:45:04',
+        duration: '00:00:03',
+        totalSize: '300.0GB',
+        dataRead: '6.2GB',
+        transferred: '4.4GB',
+        backupSize: '5.4GB',
+        dedupe: '2.0x',
+        compression: '3.1x',
+    },
+    //Object 5
+    {
+        name: 'Computer IJ',
+        success: 0,
+        warning: 1,
+        error: 0,
+        startTime: '34:40:00',
+        endTime: '09:45:04',
+        duration: '44:10:03',
+        totalSize: '550.0GB',
+        dataRead: '4.5GB',
+        transferred: '3.4GB',
+        backupSize: '5.4GB',
+        dedupe: '2.0x',
+        compression: '3.1x',
+    },
+    //Object 6
+    {
+        name: 'Computer KL',
+        success: 1,
+        warning: 0,
+        error: 0,
+        startTime: '03:40:00',
+        endTime: '44:45:04',
+        duration: '00:10:03',
+        totalSize: '340.0GB',
+        dataRead: '5.4GB',
+        transferred: '5.4GB',
+        backupSize: '4.4GB',
+        dedupe: '5.0x',
+        compression: '6.1x',
+    },
+    //Object 7
+    {
+        name: 'Computer MO',
+        success: 1,
+        warning: 0,
+        error: 0,
+        startTime: '23:40:00',
+        endTime: '24:45:04',
+        duration: '00:10:03',
+        totalSize: '900.0GB',
+        dataRead: '4.3GB',
+        transferred: '3.4GB',
+        backupSize: '5.4GB',
+        dedupe: '7.0x',
+        compression: '9.3x',
+    },
+    //Object 8
+    {
+        name: 'Computer PQ',
+        success: 0,
+        warning: 0,
+        error: 1,
+        startTime: '60:40:00',
+        endTime: '33:45:04',
+        duration: '00:10:03',
+        totalSize: '440.0GB',
+        dataRead: '5.7GB',
+        transferred: '6.4GB',
+        backupSize: '3.4GB',
+        dedupe: '7.0x',
+        compression: '62.4x',
+    },
+    //Object 9
+    {
+        name: 'Computer RS',
+        success: 0,
+        warning: 1,
+        error: 0,
+        startTime: '77:40:00',
+        endTime: '33:45:04',
+        duration: '00:44:03',
+        totalSize: '550.0GB',
+        dataRead: '5.7GB',
+        transferred: '6.4GB',
+        backupSize: '7.4GB',
+        dedupe: '3.0x',
+        compression: '6.1x',
+    },
+    //Object 10
+    {
+        name: 'Computer TUVWXYZ',
+        success: 0,
+        warning: 1,
+        error: 0,
+        startTime: '77:40:00',
+        endTime: '77:45:04',
+        duration: '77:10:03',
+        totalSize: '150.0GB',
+        dataRead: '88.7GB',
+        transferred: '4.4GB',
+        backupSize: '6.4GB',
+        dedupe: '7.0x',
+        compression: '3.99x',
+    }
+];
+//Create varibles all the elements with the tBody name (one, two, three)
+var tbody = $("#tBodyOne");
+var tBodyTwo = $("#tBodyTwo");
+var tBodyThree = $('#tBodyThree');
 
-};
+//Use the tBody varibale created to create a text to distinguish which Tcells are which (Success, Wanring, Error)
+tbody.text('Success');
+tBodyTwo.text('Warning');
+tBodyThree.text('Error');
 
-var container = $('.secondName');
-var row = $('<tr>');
-if(data.success){
-    
-    var sTotal = $('<td>' + data.totalSize + '</td>');
-    var sEnd = $('<td>' + data.endTime + '</td>');
-    var sDur = $('<td>' + data.duration + '</td>');
-    var sRead = $('<td>' + data.dataRead + '</td>');
-    var sTransfer = $('<td>' + data.transfeered + '</td>');
-    var sBackup = $('<td>' + data.backupSize + '</td>');
-    var sDedupe = $('<td>' + data.dedupe + '</td>');
-    var sCompression = $('<td>' + data.compression + '</td>');
-    var sStart = $('<td>' + data.startTime + '</td>');
+//Make a function called infoData
+function infoData() {
+    //Run a for loop to loop through all objects containing name success
+    for (var i = 0; i < data.length; i++) {
+        //create a table row using jQuery
+        var row = $('<tr>');
+        //Make an if statement to select all the data that is true and appened to the page
+        if (data[i].success) {
+            console.log(data[i].success)
+            var name = $('<td>' + 'Name:' + ' ' + data[i].name + '</td>');
+            console.log(data[i].name);
+            var success = $('<td>' + 'Success:' + ' ' + data[i].success + '</td>');
+            var warning = $('<td>' + 'Warning:' + ' ' + data[i].warning + '</td>');
+            var error = $('<td>' + 'Error:' + ' ' + data[i].error + '</td>');
+            var tS = $('<td>' + 'TotalSize:' + ' ' + data[i].totalSize + '</td>');
+            var eT = $('<td>' + 'EndTime' + ' ' + data[i].endTime + '</td>');
+            var dur = $('<td>' + 'Duration' + ' ' + data[i].duration + '</td>');
+            var dR = $('<td>' + 'DataRead' + ' ' + data[i].dataRead + '</td>');
+            var trans = $('<td>' + 'Transferred' + ' ' + data[i].transferred + '</td>');
+            var bS = $('<td>' + 'BackUpSize:' + ' ' + data[i].backupSize + '</td>');
+            var dedupe = $('<td>' + 'Dedupe:' + ' ' + data[i].dedupe + '</td>');
+            var compress = $('<td>' + 'Compression:' + ' ' + data[i].compression + '</td>');
+            var sT = $('<td>' + 'StartTime:' + ' ' + data[i].startTime + '</td>');
 
-    row.append(sTotal);
-    row.append(sEnd);
-    row.append(sDur);
-    row.append(sRead);
-    row.append(sTransfer);
-    row.append(sBackup);
-    row.append(sDedupe);
-    row.append(sCompression);
-    row.append(sStart);
+            row.append(name);
+            row.append(success);
+            row.append(warning);
+            row.append(error);
+            row.append(tS);
+            row.append(eT);
+            row.append(dur);
+            row.append(dR);
+            row.append(trans);
+            row.append(bS);
+            row.append(dedupe);
+            row.append(compress);
+            row.append(sT);
+
+            tbody.append(row);
+        }
+
+
+    }
+    //Run a for loop to loop through all objects containing name success
+    for (var i = 0; i < data.length; i++) {
+        //Make an if statement to select all the data that is true and appened to the page
+        if (data[i].warning) {
+            var row = $('<tr>');
+            console.log(data[i].warning);
+            var nameTwo = $('<td>' + 'Name:' + ' ' + data[i].name + '</td>');
+            var successTwo = $('<td>' + 'Success:' + ' ' + data[i].success + '</td>');
+            var warningTwo = $('<td>' + 'Warning:' + ' ' + data[i].warning + '</td>');
+            var errorTwo = $('<td>' + 'Error:' + ' ' + data[i].error + '</td>');
+            var tSTwo = $('<td>' + 'Total Size' + ' ' + data[i].totalSize + '</td>');
+            var eTTwo = $('<td>' + 'End Time:' + ' ' + data[i].endTime + '</td>');
+            var durTwo = $('<td>' + 'Duration:' + ' ' + data[i].duration + '</td>');
+            var dRTwo = $('<td>' + 'Data Read:' + ' ' + data[i].dataRead + '</td>');
+            var transTwo = $('<td>' + 'Transferred:' + ' ' + data[i].transferred + '</td>');
+            var bSTwo = $('<td>' + 'Backup Size:' + ' ' + data[i].backupSize + '</td>');
+            var dedupeTwo = $('<td>' + 'Dedupe:' + ' ' + data[i].dedupe + '</td>');
+            var compressTwo = $('<td>' + 'Compression:' + ' ' + data[i].compression + '</td>');
+            var sTTwo = $('<td>' + 'StartTime:' + ' ' + data[i].startTime + '</td>');
+            //successC.text('Success:' + '' + data.computerNameB.success)
+            row.append(nameTwo);
+            row.append(successTwo);
+            row.append(warningTwo);
+            row.append(errorTwo);
+            row.append(tSTwo);
+            row.append(eTTwo);
+            row.append(durTwo);
+            row.append(dRTwo);
+            row.append(transTwo);
+            row.append(bSTwo);
+            row.append(dedupeTwo);
+            row.append(compressTwo);
+            row.append(sTTwo);
+
+            tBodyTwo.append(row);
+        }
+    }
+    //Run a for loop to loop through all objects containing name success
+    for (var i = 0; i < data.length; i++) {
+        //Make an if statement to select all the data that is true and appened to the page
+        if (data[i].error) {
+            var row = $('<tr>');
+            var nameThree = $('<td>' + 'Name:' + ' ' + data[i].name + '</td>');
+            var successThree = $('<td>' + 'Success:' + ' ' + data[i].success + '</td>');
+            var warningThree = $('<td>' + 'Warning:' + ' ' + data[i].warning + '</td>');
+            var errorThree = $('<td>' + 'Error:' + ' ' + data[i].error + '</td>');
+            var tSThree = $('<td>' + data[i].totalSize + '</td>');
+            var eTThree = $('<td>' + data[i].endTime + '</td>');
+            var durThree = $('<td>' + data[i].duration + '</td>');
+            var dRThree = $('<td>' + data[i].dataRead + '</td>');
+            var transThree = $('<td>' + data[i].transfeered + '</td>');
+            var bSThree = $('<td>' + data[i].backupSize + '</td>');
+            var dedupeThree = $('<td>' + data[i].dedupe + '</td>');
+            var compressThree = $('<td>' + data[i].compression + '</td>');
+            var sTThree = $('<td>' + data[i].startTime + '</td>');
+
+            row.append(nameThree);
+            row.append(successThree);
+            row.append(warningThree);
+            row.append(errorThree);
+            row.append(tSThree);
+            row.append(eTThree);
+            row.append(durThree);
+            row.append(dRThree);
+            row.append(transThree);
+            row.append(bSThree);
+            row.append(dedupeThree);
+            row.append(compressThree);
+            row.append(sTThree);
+
+            tBodyThree.append(row);
+
+        }
+    }
+
+
+
+
 }
 
-if(data.warning){
-    //alert("works")
-    var computerName = $('<td>' + 'Name:' + ' ' + data.name + '</td>');
-    var successC = $('<td>' + 'Success:' + ' ' + data.success + '</td>');
-    var warn = $('<td>' + 'Warning:' + ' ' + data.warning + '</td>');
-    var error = $('<td>' + 'Error:' + ' ' + data.error + '</td>');
-    var wTotal = $('<td>' + 'Total Size' + ' ' + data.totalSize + '</td>');
-    console.log(wTotal);
-    var wEnd = $('<td>' +'End Time:'+ ' ' + data.endTime + '</td>');
-    var wDur = $('<td>' + 'Duration:' + ' ' + data.duration + '</td>');
-    var wRead = $('<td>' + 'Data Read:' + ' ' + data.dataRead + '</td>');
-    var wTrans = $('<td>' + 'Transferred:' + ' ' +  data.transferred + '</td>');
-    var wBack = $('<td>' + 'Backup Size:' + ' ' + data.backupSize + '</td>');
-    var wDedupe = $('<td>' + 'Dedupe:' + ' ' + data.dedupe + '</td>');
-    var wCompress = $('<td>' + 'Compression:' + ' ' + data.compression + '</td>');
-    var wStart = $('<td>' + 'StartTime:' + ' ' + data.startTime + '</td>');
-    //successC.text('Success:' + '' + data.computerNameB.success)
-    row.append(computerName);
-    row.append(successC);
-    row.append(warn);
-    row.append(error);
-    row.append(wTotal);
-    row.append(wEnd);
-    row.append(wDur);
-    row.append(wRead);
-    row.append(wTrans);
-    row.append(wBack);
-    row.append(wDedupe);
-    row.append(wCompress);
-    row.append(wStart);
 
-}
-if(data.error){
-    var eTotal = $('<td>' + data.totalSize + '</td>');
-    var eEnd = $('<td>' + data.endTime + '</td>');
-    var eDur = $('<td>' + data.duration + '</td>');
-    var eRead = $('<td>' + data.dataRead + '</td>');
-    var eTrans = $('<td>' + data.transfeered + '</td>');
-    var eBack = $('<td>' + data.backupSize + '</td>');
-    var eDedupe = $('<td>' + data.dedupe + '</td>');
-    var eCompress = $('<td>' + data.compression + '</td>');
-    var eStart = $('<td>' + data.startTime + '</td>');
-
-    row.append(eTotal);
-    row.append(eEnd);
-    row.append(eDur);
-    row.append(eRead);
-    row.append(eTrans);
-    row.append(eBack);
-    row.append(eDedupe);
-    row.append(eCompress);
-    row.append(eStart);
-}
-container.append(row);
-
-// console.log('Display data' +" "+ data);
-
-// var keys = Object.keys(data);
-
-// for(i = 0; i < keys.length; i++){
-//     var container = document.querySelector('.someName');
-//     var containerTwo = document.querySelector('.secondName');
-//     var containerThree= document.querySelector('.thirdName');
-
-//     var row = document.createElement('td');
-
-//     row.innerText = data[keys[i]];
-
-//     container.appendChild(row);
-//     containerTwo.appendChild(row);
-//     containerThree.appendChild(row);
-//     console.log(containerTwo);
-// }
-
-
-// debugger;
-//dummy data works
-//document.querySelector('#test').innerHTML = JSON.stringify(data);
+infoData()
