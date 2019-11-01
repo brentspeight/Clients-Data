@@ -5,18 +5,6 @@ table, tr, td {
     font-size: 16px;
 }
 
-#Success {
- font-weight: bold;
-}
-
-#Warning {
-  font-weight: bold;
-}
-
-#Error {
-  font-weight: bold;
-}
-
 body {
     background-color: rgb(44, 57, 71);
 }
