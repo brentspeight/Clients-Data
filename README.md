@@ -14,6 +14,10 @@
 
 ## Application Requirements:
 
+    Javascript:
+    
+    jQuery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+
 
 
 ## Deployed to GitHub at:
@@ -30,7 +34,7 @@ Brent Speight: Initialized Repository, Initialized: ZenHub Clients-Data Issues #
 
 Becca Burke: Project Proposal, Project Oversight, and Assigned To: Issue #11 Css updates
 
-Isabeela Gomez:
+Isabeela Gomez: CSS styling 
 
 Tywunda Shivers: 
 
