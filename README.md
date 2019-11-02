@@ -40,7 +40,7 @@
 
     Becca Burke: Project Proposal and Project Oversight; Assigned To: Issue #11 Css updates
 
-    Isabeela Gomez: CSS styling; Assigned To: Issue #10 Make it look Pretty/CSS :) 
+    Isabel Gomez: CSS styling; Assigned To: Issue #10 Make it look Pretty/CSS :) 
 
     Tywunda Shivers: README.md; Assigned To: Issue #5 Filling out README.md 
 
